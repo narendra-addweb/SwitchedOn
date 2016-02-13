@@ -244,7 +244,14 @@
 		
 		#  Load Scripts & Plugins
 		wp_enqueue_script('plugins-js'						, get_template_directory_uri().'/layout/js/plugins.js'									, array('jquery'),'1.0', true );    		
-		wp_enqueue_script('scripts-js'						, get_template_directory_uri().'/layout/js/scripts.js'									, array('jquery'),'1.0', true );    		
+		wp_enqueue_script('scripts-js'						, get_template_directory_uri().'/layout/js/scripts.js'									, array('jquery'),'1.0', true );   
+
+		/*
+        Custom style
+        Please remove below comment for two line if you want to add custom.css style
+    */
+    wp_register_style( 'custom-style', get_stylesheet_directory_uri() . '/custom.css' );
+    wp_enqueue_style( 'custom-style' ); 		
 	
 	}
 
