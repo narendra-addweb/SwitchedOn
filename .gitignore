@@ -1,0 +1,9 @@
+#Ignore these directories
+wp-content/uploads
+
+#Ignore these files
+.htaccess
+
+
+# databases
+*.sql
