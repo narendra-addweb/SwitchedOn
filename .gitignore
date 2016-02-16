@@ -3,6 +3,7 @@ wp-content/uploads
 
 #Ignore these files
 .htaccess
+wp-config.php
 
 
 # databases
