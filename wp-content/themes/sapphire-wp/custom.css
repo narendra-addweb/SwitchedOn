@@ -223,7 +223,8 @@ body {
   line-height: normal !important;
 }
 .custom-slider-home1 .slogan_slider {
-  padding: 20px 10px !important;
+  min-height: 120px !important;
+  padding: 20px !important;
   border: 1px solid #FFF;
   font-family:OpenSans-SemiboldItalic;
   font-size: 25px;
@@ -358,7 +359,7 @@ body {
   display: inline-block;
   width: 100%;
   margin-top: 10px;
-  border-top: 5px solid #fff;
+  border-top: 4px solid #fff;
   content: "";
 }
 .custom-slider-home2 .wpb_revslider_element .rev_slider:after {
@@ -369,7 +370,7 @@ body {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
-  border-bottom: 5px solid #fff;
+  border-bottom: 4px solid #fff;
   content: "";
 }
 .custom-slider-home2 .home-slide2-line-top,
