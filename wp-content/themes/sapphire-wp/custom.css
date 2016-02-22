@@ -222,19 +222,32 @@ body {
 .custom-slider-home1 .rev_slider .tp-caption {
   line-height: normal !important;
 }
+.custom-slider-home1 .rev_slider .tp-caption:nth-child(2) img {
+  width: 100% !important;
+  max-width: 722px !important;
+  height: auto !important;
+}
+.custom-slider-home1 .rev_slider .tp-caption:nth-child(3) img {
+  width: 100% !important;
+  max-width: 420px !important;
+  height: auto !important;
+}
 .custom-slider-home1 .slogan_slider {
   min-height: 120px !important;
   padding: 20px !important;
   border: 1px solid #FFF;
-  font-family:OpenSans-SemiboldItalic;
-  font-size: 25px;
-  line-height: 32px;
   text-align: center;
+}
+.custom-slider-home1 .slogan_slider .slogan_slider_text {
+  font-family: OpenSans-SemiboldItalic;
+  font-size: 25px !important;
+  font-weight: normal !important;
+  line-height: 32px !important;
 }
 .custom-slider-home1 .slogan_slider .slogan_author {
   padding-top: 7px;
   font-family:OpenSans-Regular;
-  font-size: 25px;
+  font-size: 18px !important;
   font-weight: normal;
 }
 .custom-slider-aboutme {
@@ -379,9 +392,9 @@ body {
 }
 .custom-slider-home2 .tp-caption.large_bold_white {
   font-family:OpenSans-Regular !important;
-  font-size: 70px !important;
+  font-size: 100px !important;
   font-weight: normal !important;
-  letter-spacing: 5px !important;
+  letter-spacing: 7px !important;
 }
 .custom-slider-home2 a.tp-button {
   padding: 10px 20px !important;
@@ -509,6 +522,11 @@ body {
 #footer #footer-middle #footer-middle-widget-area-1 .widget {
   margin-bottom: 15px;
 }
+#footer #footer-middle #footer-middle-widget-area-1 #text-7 img {
+  height: auto;
+  max-width: 240px;
+  width: 100%;
+}
 #footer #footer-middle .widget-title { display: none; }
 #footer #footer-middle ul {
   margin: 0;
@@ -609,3 +627,8 @@ body {
   color: #cccfda;
 }
 /* End */
+
+
+/**
+ * About 
+ */
