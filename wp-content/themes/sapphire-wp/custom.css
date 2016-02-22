@@ -243,12 +243,14 @@ body {
   font-size: 25px !important;
   font-weight: normal !important;
   line-height: 32px !important;
+  letter-spacing: 2px !important;
 }
 .custom-slider-home1 .slogan_slider .slogan_author {
-  padding-top: 7px;
+  padding-top: 10px !important;
   font-family:OpenSans-Regular;
   font-size: 18px !important;
   font-weight: normal;
+  letter-spacing: 2px !important;
 }
 .custom-slider-aboutme {
   /*padding: 0 10px !important;*/
