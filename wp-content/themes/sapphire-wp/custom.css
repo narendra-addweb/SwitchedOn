@@ -143,6 +143,10 @@ h3.headline span {
 #header {
   border: none !important;
 }
+#header #logo {
+  display: inline-block;
+  width: auto;
+}
 #header > .ewf-row > .ewf-span3,
 #header > .ewf-row > .ewf-span9 {
   width: 100%;
