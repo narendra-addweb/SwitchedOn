@@ -823,6 +823,7 @@ input[type="submit"]:hover {
   margin-top: 50px;
 }
 .custom-contact-page strong {
+  color: #ac218f;
   font-family:OpenSans-Bold;
   font-size: 14px;
   font-weight: normal;
@@ -927,6 +928,14 @@ textarea.wpcf7-form-control:focus {
   .custom-contact-page > .vc_col-sm-3,
   .custom-contact-page > .vc_col-sm-9 {
     width: 100%;
+  }
+
+  /* About me */
+  .timeline_left_content {
+    width: 20%;
+  }
+  .timeline_right_content {
+    width: 80%;
   }
 } /* 767px */
 
