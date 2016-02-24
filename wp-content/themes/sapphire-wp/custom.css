@@ -643,18 +643,45 @@ h3.headline span {
 
 /* placeholder */
 ::-webkit-input-placeholder {
-  color: #cccfda;
+  color: #333;
+  font-family:OpenSans-Regular;
+  text-transform: capitalize;
 }
 ::-moz-placeholder {
-  color: #cccfda;
+  color: #333;
+  font-family:OpenSans-Regular;
+  text-transform: capitalize;
 }
 :-ms-input-placeholder {
-  color: #cccfda;
+  color: #333;
+  font-family:OpenSans-Regular;
+  text-transform: capitalize;
 }
 :-moz-placeholder {
+  color: #333;
+  font-family:OpenSans-Regular;
+  text-transform: capitalize;
+}
+
+#footer ::-webkit-input-placeholder {
+  color: #cccfda;
+}
+#footer ::-moz-placeholder {
+  color: #cccfda;
+}
+#footer :-ms-input-placeholder {
+  color: #cccfda;
+}
+#footer :-moz-placeholder {
   color: #cccfda;
 }
 /* End */
+
+/* Button hover effect */
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+/* */
 
 
 /**
@@ -732,11 +759,9 @@ h3.headline span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0bd0', endColorstr='#b70fd2',GradientType=1 );
   color: #fff;
 }
-/*.custom_timeline_box:nth-child(2n) .timeline_right_content {
+.custom-about-info:nth-child(2n) .custom-about-image .vc_align_left {
   float: right;
 }
-*/
-
 .custom_timeline_box .timeline_right_content .custome_title_title {
   display: inline-block;
   width: 100%;
@@ -790,3 +815,122 @@ h3.headline span {
 }*/
 
 /* End */
+
+/**
+ * Contact page
+ */
+.custom-contact-page {
+  margin-top: 50px;
+}
+.custom-contact-page strong {
+  font-family:OpenSans-Bold;
+  font-size: 14px;
+  font-weight: normal;
+}
+.custom-contact-map > .vc_col-sm-12 {
+  padding: 0;
+}
+.google-map {
+  border-color: #ccc;
+}
+.wpcf7-form-control {
+  min-height: 30px;
+}
+input.wpcf7-form-control:focus,
+textarea.wpcf7-form-control:focus {
+  border-color: rgba(172, 33, 143, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1)
+}
+/* End */
+
+/**
+ * Belief page
+ */
+.custom-belief-content p {
+  font-size: 14px;
+}
+.custom-belief-content p:before {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px -5px 0 ;
+  background-image: url('images/belief-icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+}
+/* End */
+
+/**
+ * Work me page
+ */
+.workme-right-content p {
+  font-family:OpenSans-bold;
+}
+/* End */
+
+
+
+/**
+ * Responsive design
+ */
+/* Small desktop monitor view */
+@media screen and (max-width: 1200px) {
+  .ewf-row {
+    width: 970px;
+  }
+} /* 1200px */
+
+/* Tablet and i-pad landscape & portrait view */
+@media screen and (max-width: 1024px) {
+  
+} /* 1024px */
+
+/* Tablet and i-pad portrait view only */
+@media screen and (max-width: 992px) {
+  .ewf-row {
+    width: 750px;
+  }
+
+  /* Menu */
+  .sf-menu li {
+    margin: 0 10px;
+  }
+  /* contact page*/
+  .custom-contact-page > .vc_col-sm-3 {
+    width: 35%;
+  }
+  .custom-contact-page > .vc_col-sm-9 {
+    width: 65%;
+  }
+
+  /* Footer */
+  #footer #footer-middle #footer-middle-widget-area-1 {
+    width: 36%;
+  }
+  #footer #footer-middle #footer-middle-widget-area-4 {
+    width: 32%;
+  }
+  #footer #footer-middle #footer-middle-widget-area-2,
+  #footer #footer-middle #footer-middle-widget-area-3 {
+    width: 13%;
+  }
+  
+} /* 992px */
+
+/* Mobile landscape & portrait view */
+@media screen and (max-width: 767px) {
+  .ewf-row {
+    width: auto;
+  }
+  /* contact page*/
+  .custom-contact-page > .vc_col-sm-3,
+  .custom-contact-page > .vc_col-sm-9 {
+    width: 100%;
+  }
+} /* 767px */
+
+/* Mobile portrait view only */
+@media screen and (max-width: 480px) {
+  
+} /* 480px */
