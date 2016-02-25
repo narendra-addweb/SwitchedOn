@@ -103,6 +103,10 @@ h3.headline span {
   background-repeat: no-repeat;
   content: '';
 }
+#header-top .custom-email,
+#header-top .custom-email a {
+  color: #000;
+}
 #header-top .custom-email:before {
   display: inline-block;
   height: 12px;
@@ -786,6 +790,10 @@ input[type="submit"]:hover {
   font-size: 20px;
   line-height: normal;
   letter-spacing: 1px;
+}
+.custom-contact-page .ewf-wrapper a,
+.custom-contact-page .ewf-wrapper a:hover {
+  text-decoration: none;
 }
 .custom-parallax .custom-parallax-left .ewf-wrapper .wpb_text_column {
   display: inline-block;
