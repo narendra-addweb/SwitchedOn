@@ -106,6 +106,7 @@ h3.headline span {
 #header-top .custom-email,
 #header-top .custom-email a {
   color: #000;
+  text-decoration: none;
 }
 #header-top .custom-email:before {
   display: inline-block;
