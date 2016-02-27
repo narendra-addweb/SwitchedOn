@@ -94,7 +94,7 @@ h3.headline span {
   font-family:OpenSans-Bold;
   font-weight: normal;
 }
-#header-top .custom-contact:before {
+.custom-contact:before {
   display: inline-block;
   height: 13px;
   width: 11px;
@@ -103,12 +103,7 @@ h3.headline span {
   background-repeat: no-repeat;
   content: '';
 }
-#header-top .custom-email,
-#header-top .custom-email a {
-  color: #000;
-  text-decoration: none;
-}
-#header-top .custom-email:before {
+.custom-email:before {
   display: inline-block;
   height: 12px;
   width: 16px;
@@ -553,7 +548,7 @@ h3.headline span {
   margin-left: 2%;
 }
 #footer #footer-middle #footer-middle-widget-area-1 .widget {
-  margin-bottom: 15px;
+  padding: 60px 0;
 }
 #footer #footer-middle #footer-middle-widget-area-1 #text-7 img {
   height: auto;
@@ -572,6 +567,11 @@ h3.headline span {
 #footer #footer-middle ul li a {
   color: #fff;
   font-size: 14px;
+}
+#footer #footer-middle ul li a:hover,
+#footer #footer-middle ul li a:focus {
+  text-decoration: none;
+  opacity: 0.8;
 }
 #footer #footer-middle .footer-address {
   display: inline-block;
@@ -764,7 +764,10 @@ input[type="submit"]:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0bd0', endColorstr='#b70fd2',GradientType=1 );
   color: #fff;
 }
-.custom-about-info:nth-child(2n) .custom-about-image .vc_align_left {
+.custom-about-parent {
+  font-size: 14px;
+}
+.custom-about-info.right-img .custom-about-image .vc_align_left {
   float: right;
 }
 .custom_timeline_box .timeline_right_content .custome_title_title {
@@ -784,9 +787,12 @@ input[type="submit"]:hover {
 }
 
 /* parallax */
+.custom-parallax {
+  margin-bottom: 0;
+}
 .custom-parallax .custom-parallax-right .ewf-wrapper {
   display: inline-block;
-  padding: 50px 20px;
+  padding: 60px 20px;
   font-family: OpenSans-SemiboldItalic;
   font-size: 20px;
   line-height: normal;
@@ -851,6 +857,28 @@ textarea.wpcf7-form-control:focus {
   border-color: rgba(172, 33, 143, 0.3);
   box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1)
 }
+.custom-skype:before {
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  margin: 0 10px -3px 0;
+  background-image: url('images/skype-icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+}
+.custom-contact-leftside .custom-contact:before,
+.custom-contact-leftside .custom-email:before {
+  margin: 0 10px -1px 0;
+}
+.custom-contact-leftside p {
+  font-size: 16px;
+}
+.custom-contact-leftside p > span {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
 /* End */
 
 /**
@@ -874,11 +902,37 @@ textarea.wpcf7-form-control:focus {
 /**
  * Work me page
  */
+.workme-content {
+  font-size: 14px;
+}
 .workme-right-content p {
   font-family:OpenSans-bold;
 }
 /* End */
 
+
+/**
+ * what is coaching coaching
+ */
+.custom-coaching {
+  font-size: 14px;
+}
+.custom-coaching ul {
+  list-style: none;
+}
+.custom-coaching ul li:before {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px -5px 0 ;
+  background-image: url('images/belief-icon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+}
+.custom-coaching ul li {
+  margin-bottom: 10px;
+}
 
 
 /**
