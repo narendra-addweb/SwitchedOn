@@ -115,6 +115,9 @@ h3.headline span {
 #header-top .custom-email a {
   color: #000;
 }
+#header-top .custom-email a:hover {
+  text-decoration: none;
+}
 #header-top .ewf_widget_social_media {
   float: right;
   width: auto;
@@ -775,6 +778,7 @@ input[type="submit"]:hover {
 }
 .custom-about-parent {
   font-size: 14px;
+  line-height: 26px;
 }
 .custom-about-info.right-img .custom-about-image .vc_align_left {
   float: right;
@@ -815,7 +819,9 @@ input[type="submit"]:hover {
   display: inline-block;
   margin: 70px 100px;
   padding: 8px;
-  background-color: rgba(0, 0, 0, 0.9);
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+  background-image: url('images/colorfull.png');
+  content: '';
   font-size: 30px;
 }
 .custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column .ewf-wrapper {
