@@ -803,6 +803,9 @@ input[type="submit"]:hover {
 .custom-parallax {
   margin-bottom: 0;
 }
+.custom-parallax .custom-parallax-content {
+  text-align: center;
+}
 .custom-parallax .custom-parallax-content .ewf-wrapper {
   display: inline-block;
   padding: 50px 20px;
