@@ -112,6 +112,9 @@ h3.headline span {
   background-repeat: no-repeat;
   content: '';
 }
+#header-top .custom-email a {
+  color: #000;
+}
 #header-top .ewf_widget_social_media {
   float: right;
   width: auto;
@@ -353,7 +356,8 @@ h3.headline span {
   font-size: 19px;
 }
 .custom-block-1 .custom-subblock .wpb_text_column {
-  margin-bottom: 25px;
+  min-height: 220px;
+  margin-bottom: 20px;
 }
 .custom-block-1 h2 {
   position: relative;
@@ -584,7 +588,7 @@ h3.headline span {
   font-size: 14px;
 }
 #footer #footer-middle #footer-middle-widget-area-4 .widget {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 #footer #footer-middle #footer-middle-widget-area-4 .textwidget > div {
   color: #fff;
@@ -594,13 +598,16 @@ h3.headline span {
 #footer #footer-middle #footer-middle-widget-area-4 input {
   min-height: 30px;
   max-width: 223px;
-  margin: 10px 0  0;
+  width: 100%;
+  margin: 0;
   padding: 5px 10px;
   background-color: #fff;
   color: #111;
   border: 1px solid #acacac;
 }
-#footer #footer-middle #footer-middle-widget-area-4 input[type="submit"] {
+#footer #footer-middle #footer-middle-widget-area-4 input[type="submit"],
+#footer #footer-middle #footer-middle-widget-area-4 .eemail_textbox_button {
+  width: auto;
   border: none;
   background-color: #2B2B2D;
   color: #fff;
@@ -611,7 +618,9 @@ h3.headline span {
           border-radius: 5px;
 }
 #footer #footer-middle #footer-middle-widget-area-4 input[type="submit"]:hover,
-#footer #footer-middle #footer-middle-widget-area-4 input[type="submit"]:focus {
+#footer #footer-middle #footer-middle-widget-area-4 input[type="submit"]:focus,
+#footer #footer-middle #footer-middle-widget-area-4 .eemail_textbox_button:hover,
+#footer #footer-middle #footer-middle-widget-area-4 .eemail_textbox_button:focus {
   opacity: 0.8;
 }
 #footer #footer-middle span.wpcf7-not-valid-tip {
@@ -790,9 +799,9 @@ input[type="submit"]:hover {
 .custom-parallax {
   margin-bottom: 0;
 }
-.custom-parallax .custom-parallax-right .ewf-wrapper {
+.custom-parallax .custom-parallax-content .ewf-wrapper {
   display: inline-block;
-  padding: 60px 20px;
+  padding: 50px 20px;
   font-family: OpenSans-SemiboldItalic;
   font-size: 20px;
   line-height: normal;
@@ -802,14 +811,14 @@ input[type="submit"]:hover {
 .custom-contact-page .ewf-wrapper a:hover {
   text-decoration: none;
 }
-.custom-parallax .custom-parallax-left .ewf-wrapper .wpb_text_column {
+.custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column {
   display: inline-block;
   margin: 70px 100px;
   padding: 8px;
   background-color: rgba(0, 0, 0, 0.9);
   font-size: 30px;
 }
-.custom-parallax .custom-parallax-left .ewf-wrapper .wpb_text_column .ewf-wrapper {
+.custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column .ewf-wrapper {
   padding: 50px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
