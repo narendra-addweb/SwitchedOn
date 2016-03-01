@@ -980,23 +980,32 @@ textarea:focus {
 /**
  * Testimonial page
  */
-.testimonials-widget-testimonial {
+.listing .testimonials-widget-testimonial {
   display: inline-block;
   width: 100%;
+  margin-bottom: 70px;
 }
 .testimonials-widget-testimonial span img {
   padding: 2px;
   border: 2px solid #c2c2c2;
-  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+     -moz-border-radius: 1000px;
+          border-radius: 1000px;
 }
 .testimonials-widget-testimonial blockquote {
   display: inline-block;
-  width: calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+  width:    -moz-calc(100% - 200px);
+  width:         calc(100% - 200px);
   margin: 30px 0 0;
+  padding-left: 200px;
   border-left: 0;
   font-family: OpenSans-Semibold;
   font-size: 14px;
-  text-align: left;
+  text-align: center;
+}
+.testimonials-widget-testimonial.has-post-thumbnail blockquote {
+  padding-left: 20px;
 }
 .testimonials-widget-testimonial .credit {
   color: #ac218f;
