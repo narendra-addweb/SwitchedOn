@@ -69,7 +69,7 @@ h3.headline span {
   border-image: url('images/border-img.png') 10 10 10 10;
 }
 #page-header {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 /* End */
 
@@ -470,19 +470,6 @@ h3.headline span {
   color: #111111;
   font-size: 13px;
 }
-/*.custom-blog-home h3 {
-  max-width: 550px;
-  margin-bottom: 20px;
-  border-color: #c2c2c2;
-  color: #111111;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.custom-blog-home .headline span {
-  padding-bottom: 0;
-  border-color: #b90086;
-  border-image: url('images/border-img.png') 10 10 10 10;
-}*/
 .custom-blog-home .vc_gitem-animated-block  {
   float: right;
   width: 50%;
@@ -492,10 +479,6 @@ h3.headline span {
   width: 100%;
   height: auto;
 }
-/* .custom-blog-home .custom-blog-left {
-  float: left;
-  width: 50%;
-}*/
 .custom-blog-home .custom-blog-left .vc_row > .vc_col-sm-12 {
   padding-left: 0;
 }
@@ -870,8 +853,11 @@ input[type="submit"]:hover {
 .wpcf7-form-control {
   min-height: 30px;
 }
-input.wpcf7-form-control:focus,
-textarea.wpcf7-form-control:focus {
+input:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
   border-color: rgba(172, 33, 143, 0.3);
   box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1)
 }
@@ -951,6 +937,72 @@ textarea.wpcf7-form-control:focus {
 .custom-coaching ul li {
   margin-bottom: 10px;
 }
+/* End */
+
+
+
+/**
+ * Blog inner page
+ */
+.blog-post {
+  font-size: 14px;
+}
+.blog-post h4 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.blog-post .icon-box-1 {
+  margin-bottom: 20px;
+}
+.blog-post .icon-box-1 .icon-box-content {
+  margin-left: 0;
+}
+.comment-form {
+  font-size: 14px;
+}
+.comment-form label {
+  color: #000;
+  font-family:OpenSans-Semibold;
+}
+.comment-form input {
+  width: 100%;
+}
+.comment-form input.submit {
+  width: auto;
+  border: none;
+  background-color: #ac218f;
+  color: #fff;
+}
+/* End */
+
+
+/**
+ * Testimonial page
+ */
+.testimonials-widget-testimonial {
+  display: inline-block;
+  width: 100%;
+}
+.testimonials-widget-testimonial span img {
+  padding: 2px;
+  border: 2px solid #c2c2c2;
+  border-radius: 1000px;
+}
+.testimonials-widget-testimonial blockquote {
+  display: inline-block;
+  width: calc(100% - 200px);
+  margin: 30px 0 0;
+  border-left: 0;
+  font-family: OpenSans-Semibold;
+  font-size: 14px;
+  text-align: left;
+}
+.testimonials-widget-testimonial .credit {
+  color: #ac218f;
+  font-size: 18px;
+}
+/* End */
 
 
 /**
