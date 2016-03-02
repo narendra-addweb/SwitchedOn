@@ -930,6 +930,9 @@ input[type="submit"],
 .workme-right-content p {
   font-family:OpenSans-bold;
 }
+.workme-content a.vc_general {
+  background-color: #ac218f !important;
+}
 /* End */
 
 
@@ -1205,6 +1208,11 @@ input[type="submit"],
   .timeline_right_content {
     width: 80%;
   }
+  .custom-about-info .custom-about-image,
+  .custom-about-info .custom-about-text {
+    width: 100%;
+  }
+
 
   /* Home page */
   .custom-block-1 .custom-subblock {
