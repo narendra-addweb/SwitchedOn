@@ -1060,6 +1060,41 @@ input[type="submit"],
 }
 /* End */
 
+/* Pagination */
+.pagination {
+  float: left;
+  display: inline-block;
+  border-radius: 4px;
+}
+.pagination li {
+  margin: 0;
+}
+.pagination li a {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #ac218f;
+  text-decoration: none;
+}
+.pagination li:first-child a {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.pagination li:last-child a {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.pagination li.current a {
+  background-color: #ac218f;
+  color: #fff;
+  cursor: default;
+  z-index: 2;
+}
+/* End */
+
 
 /**
  * Responsive design
