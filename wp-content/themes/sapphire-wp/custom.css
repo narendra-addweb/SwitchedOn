@@ -794,6 +794,9 @@ input[type="submit"]:hover {
 .custom-parallax .custom-parallax-content {
   text-align: center;
 }
+.custom-parallax .custom-parallax-content.custom-content-left {
+  text-align: left;
+}
 .custom-parallax .custom-parallax-content .ewf-wrapper {
   display: inline-block;
   padding: 70px 20px;
