@@ -881,6 +881,7 @@ input[type="submit"]:hover {
 
 /* parallax */
 .custom-parallax {
+  min-height: 450px;
   margin-bottom: 0;
   font-family:Lato-bold;
 }
@@ -888,7 +889,7 @@ input[type="submit"]:hover {
   display: inline-block;
   max-width: 700px;
   padding: 90px 20px;
-  font-size: 36px;
+  font-size: 30px;
   line-height: normal;
   letter-spacing: 1px;
   text-align: center;
@@ -909,6 +910,9 @@ input[type="submit"]:hover {
 }
 .custom-parallax-content.coaching {
   max-width: 900px;
+}
+.custom-author {
+  font-size: 22px;
 }
 
 /*.custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column {
