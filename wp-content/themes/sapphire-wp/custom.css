@@ -94,6 +94,10 @@ h3.headline span {
   font-family:OpenSans-Bold;
   font-weight: normal;
 }
+#header-top .custom-contact,
+#header-top .custom-contact a {
+  color: #000;
+}
 .custom-contact:before {
   display: inline-block;
   height: 13px;
@@ -703,6 +707,7 @@ input[type="submit"]:hover {
   position: absolute;
   top: 0;
   left: 0;
+  display: inline-block;
   height: 100%;
   width: 1px;
   margin-left: -1px;
