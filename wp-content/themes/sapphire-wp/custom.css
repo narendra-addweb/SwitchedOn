@@ -350,7 +350,7 @@ h3.headline span {
 
 /* Block */
 .custom-block-1 {
-  margin: 50px auto 90px;
+  margin: 30px auto;
   text-align: center;
   color: #9C9C9C;
 }
@@ -827,34 +827,50 @@ input[type="submit"]:hover {
 }
 .custom-timeline .horizontal-timeline li {
   display: inline-block;
+}
+.custom-timeline .horizontal-timeline li .timeline-year {
+  display: inline-block;
   padding: 0 30px;
   font-family: OpenSans-bold;
   font-size: 22px;
 }
-/*.custom-timeline .horizontal-timeline:after {
+.custom-timeline .horizontal-timeline li.big-timeline .timeline-year {
+  position: relative;
+  bottom: -21px;
+  z-index: 1;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-size: 40px;
+}
+.custom-timeline .horizontal-timeline li .year-conector {
+
+}
+.custom-timeline .horizontal-timeline:after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -20px;
   display: inline-block;
   height: 15px;
-  width: 2px;
-  background-image: url('images/line.png');
-  background-repeat: repeat;
-  content: "";
-}*/
-.custom-timeline .horizontal-timeline .timeline-conector {
-  display: inline-block;
-  height: 15px;
-  width: 2px;
-  background-image: url('images/line.png');
+  width: 100%;
+  background-image: url('images/line-1.png');
   background-repeat: repeat;
   content: "";
 }
+/*.custom-timeline .horizontal-timeline .timeline-conector {
+  display: inline-block;
+  height: 15px;
+  width: 100%;
+  background-image: url('images/line-1.png');
+  background-repeat: repeat;
+  content: "";
+}*/
 
 
 /* parallax */
-   {
+.custom-parallax {
   min-height: 350px;
+  margin-bottom: 0;
 }
 .custom-parallax .custom-parallax-content {
   text-align: center;
@@ -892,7 +908,7 @@ input[type="submit"]:hover {
 .custom-about-info.vc_row {
   display: inline-block;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .custom-about-info .custom-about-image img {
   height: auto;
@@ -965,7 +981,7 @@ input[type="submit"],
   margin: 0 10px -1px 0;
 }
 .custom-contact-leftside p {
-  font-size: 16px;
+  font-size: 14px;
 }
 .custom-contact-leftside p > span {
   display: inline-block;
@@ -1008,6 +1024,14 @@ input[type="submit"],
 .workme-content a.vc_general {
   background-color: #ac218f !important;
 }
+.workme-content > .vc_col-sm-12 {
+  padding: 0;
+}
+.workme-content .custon-Session {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
 /* End */
 
 
@@ -1100,7 +1124,7 @@ input[type="submit"],
 .listing .testimonials-widget-testimonial {
   display: inline-block;
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .testimonials-widget-testimonial span img {
   padding: 2px;
