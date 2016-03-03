@@ -526,6 +526,9 @@ h3.headline span {
   font-family:Arimo-Regular;
   color: #fff;
 }
+#footer li {
+  margin-bottom: 15px;
+}
 #footer a {
   color: #fff;
 }
@@ -568,7 +571,7 @@ h3.headline span {
   margin-left: 2%;
 }
 #footer #footer-middle #footer-middle-widget-area-1 .widget {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 #footer #footer-middle #footer-middle-widget-area-1 #text-7 img {
   height: auto;
@@ -866,7 +869,6 @@ input[type="submit"]:hover {
   content: "";
 }*/
 
-
 /* parallax */
 .custom-parallax {
   min-height: 350px;
@@ -920,6 +922,7 @@ input[type="submit"]:hover {
 }*/
 
 /* End */
+
 
 /**
  * Contact page
@@ -990,6 +993,7 @@ input[type="submit"],
 }
 /* End */
 
+
 /**
  * Belief page
  */
@@ -1012,6 +1016,7 @@ input[type="submit"],
 }
 /* End */
 
+
 /**
  * Work me page
  */
@@ -1024,14 +1029,10 @@ input[type="submit"],
 .workme-content a.vc_general {
   background-color: #ac218f !important;
 }
-.workme-content > .vc_col-sm-12 {
-  padding: 0;
-}
-.workme-content .custon-Session {
+.workme-content .custom-Session {
   float: left;
-  margin: 0 20px 0 0;
+  margin: 7px 20px 0 0;
 }
-
 /* End */
 
 
@@ -1254,14 +1255,14 @@ input[type="submit"],
     width: 13%;
   }
 
-    /* Home page */
-    .custom-block-1 .custom-subblock {
-      padding: 0 30px;
-    }
-    .custom-block-1 h2 {
-      font-size: 20px;
-    }
-    #header-top #header-top-widget-area-1 {
+  /* Home page */
+  .custom-block-1 .custom-subblock {
+    padding: 0 30px;
+  }
+  .custom-block-1 h2 {
+    font-size: 20px;
+  }
+  #header-top #header-top-widget-area-1 {
     padding: 10px 0;
     font-size: 11px;
   }
