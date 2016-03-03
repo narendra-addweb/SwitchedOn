@@ -74,7 +74,7 @@
 	$ets_blog_comment_name = get_option(EWF_SETUP_THNAME."_blog_comment_name", __('Your name', EWF_SETUP_THEME_DOMAIN));
 	$ets_blog_comment_mail = get_option(EWF_SETUP_THNAME."_blog_comment_mail", __('Your Email Adress', EWF_SETUP_THEME_DOMAIN));
 	$ets_blog_comment_message = get_option(EWF_SETUP_THNAME."_blog_comment_message", __('Message', EWF_SETUP_THEME_DOMAIN));
-	$ets_blog_comment_send = get_option(EWF_SETUP_THNAME."_blog_comment_send", __('Send!', EWF_SETUP_THEME_DOMAIN));
+	$ets_blog_comment_send = get_option(EWF_SETUP_THNAME."_blog_comment_send", __('Send', EWF_SETUP_THEME_DOMAIN));
 	$ets_blog_view_posts_categorised = get_option(EWF_SETUP_THNAME."_blog_view_posts_categorised", __('Viewing posts categorised under', EWF_SETUP_THEME_DOMAIN));
 	 
 		
