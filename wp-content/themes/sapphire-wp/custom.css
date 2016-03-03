@@ -257,9 +257,9 @@ h3.headline span {
 .custom-slider-home1 .rev_slider .tp-caption {
   line-height: normal !important;
 }
-.custom-slider-home1 .rev_slider .tp-caption:nth-child(2) img {
+.custom-slider-home1 .rev_slider .tp-caption img {
   width: 100% !important;
-  max-width: 722px !important;
+  max-width: 100% !important;
   height: auto !important;
 }
 .custom-slider-home1 .rev_slider .tp-caption:nth-child(3) img {
@@ -529,6 +529,29 @@ h3.headline span {
 #footer a {
   color: #fff;
 }
+#footer-top {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+#footer-top .ewf_widget_calltoaction {
+  display: inline-block;
+  width: 100%;
+  max-width: 700px;
+}
+#footer-top .ewf-span9,
+#footer-top .ewf-span3 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+#footer-top .ewf-span9 h1 {
+  color: #ac218f;
+}
+#footer-top .ewf-span3 a.btn {
+  margin-top: 40px;
+  background-color: #ac218f;
+}
+
 #footer #footer-middle {
   padding: 40px 0;
   background-color: #ac218f;
@@ -538,7 +561,7 @@ h3.headline span {
   width: 29%;
   margin-left: 2%;
 }
-#footer #footer-middle #footer-middle-widget-area-1 { margin-left: 0; }
+#footer #footer-middle #footer-middle-widget-area-1 { margin-left: 200px; }
 #footer #footer-middle #footer-middle-widget-area-2,
 #footer #footer-middle #footer-middle-widget-area-3 {
   width: 18%;
@@ -791,10 +814,47 @@ input[type="submit"]:hover {
   font-size: 14px;
   text-align: left;
 }
+/* End */
+
+/* New timeline*/
+.custom-timeline {
+  display: inline-block;
+  width: 100%;
+}
+.custom-timeline .horizontal-timeline {
+  position: relative;
+  list-style: none;
+}
+.custom-timeline .horizontal-timeline li {
+  display: inline-block;
+  padding: 0 30px;
+  font-family: OpenSans-bold;
+  font-size: 22px;
+}
+/*.custom-timeline .horizontal-timeline:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  height: 15px;
+  width: 2px;
+  background-image: url('images/line.png');
+  background-repeat: repeat;
+  content: "";
+}*/
+.custom-timeline .horizontal-timeline .timeline-conector {
+  display: inline-block;
+  height: 15px;
+  width: 2px;
+  background-image: url('images/line.png');
+  background-repeat: repeat;
+  content: "";
+}
+
 
 /* parallax */
-.custom-parallax {
-  margin-bottom: 0;
+   {
+  min-height: 350px;
 }
 .custom-parallax .custom-parallax-content {
   text-align: center;
@@ -863,19 +923,29 @@ input[type="submit"]:hover {
 .google-map {
   border-color: #ccc;
 }
+.wpcf7-form .ewf-span6:nth-child(2n + 1),
+.wpcf7-form .ewf-span12 {
+  margin-left: 0;
+}
 .wpcf7-form-control {
   min-height: 30px;
+  width: 100%;
 }
 input:focus,
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   border-color: rgba(172, 33, 143, 0.3);
-  box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1)
+  outline: none;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1);
+     -moz-box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1);
+          box-shadow: 0px 0px 1px 1px rgba(172, 33, 143, 0.1);
 }
 input[type="submit"],
 .wpcf7-form input[type="submit"] {
+  width: auto;
   min-height: 30px;
   padding: 6px 25px;
   font-size: 14px;
