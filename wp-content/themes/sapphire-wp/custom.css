@@ -44,6 +44,13 @@
 }
 /* End */
 
+/* Lato */
+@font-face {
+  font-family:Lato-bold;
+  src: url('fonts/Lato/Lato-Bold.woff');
+}
+/* End */
+
 
 /* Main content */
 body {
@@ -554,7 +561,10 @@ h3.headline span {
   margin-top: 40px;
   background-color: #ac218f;
 }
-
+#footer-top .ewf-span3 a.btn:hover,
+#footer-top .ewf-span3 a.btn:focus {
+  opacity: 0.8;
+}
 #footer #footer-middle {
   padding: 40px 0;
   background-color: #ac218f;
@@ -871,32 +881,40 @@ input[type="submit"]:hover {
 
 /* parallax */
 .custom-parallax {
-  min-height: 350px;
   margin-bottom: 0;
+  font-family:Lato-bold;
 }
-.custom-parallax .custom-parallax-content {
-  text-align: center;
-}
-.custom-parallax .custom-parallax-content.custom-content-left {
-  text-align: left;
-}
-.custom-parallax .custom-parallax-content .ewf-wrapper {
+.custom-parallax-content {
   display: inline-block;
-  padding: 70px 20px;
-  font-family: OpenSans-SemiboldItalic;
-  font-size: 20px;
+  max-width: 700px;
+  padding: 90px 20px;
+  font-size: 36px;
   line-height: normal;
   letter-spacing: 1px;
+  text-align: center;
 }
+.custom-parallax-content.custom-content-left {
+  text-align: left;
+}
+
 .custom-contact-page .ewf-wrapper a,
 .custom-contact-page .ewf-wrapper a:hover {
   text-decoration: none;
 }
-.custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column {
+.custom-parallax-content.about-me {
+  max-width: 700px;
+}
+.custom-parallax-content.beliefs {
+  max-width: 850px;
+}
+.custom-parallax-content.coaching {
+  max-width: 900px;
+}
+
+/*.custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column {
   display: inline-block;
   margin: 70px 100px;
   padding: 8px;
-  /*background-color: rgba(0, 0, 0, 0.9);*/
   background-image: url('images/colorfull.png');
   content: '';
   font-size: 30px;
@@ -904,7 +922,7 @@ input[type="submit"]:hover {
 .custom-parallax .custom-parallax-title .ewf-wrapper .wpb_text_column .ewf-wrapper {
   padding: 50px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-}
+}*/
 
 /* Bootom content */
 .custom-about-info.vc_row {
@@ -917,10 +935,6 @@ input[type="submit"]:hover {
   max-width: 600px;
   width: 100%;
 }
-/*.custom-about-info:nth-child(2n) .custom-about-image .vc_align_left {
-  float: right;
-}*/
-
 /* End */
 
 
@@ -1028,6 +1042,10 @@ input[type="submit"],
 }
 .workme-content a.vc_general {
   background-color: #ac218f !important;
+}
+.workme-content a.vc_general:hover,
+.workme-content a.vc_general:focus {
+  opacity: 0.8;
 }
 .workme-content .custom-Session {
   float: left;
