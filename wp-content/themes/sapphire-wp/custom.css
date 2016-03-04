@@ -881,18 +881,22 @@ input[type="submit"]:hover {
 
 /* parallax */
 .custom-parallax {
-  min-height: 450px;
+  min-height: 400px;
   margin-bottom: 0;
   font-family:Lato-bold;
 }
 .custom-parallax-content {
   display: inline-block;
   max-width: 700px;
-  padding: 90px 20px;
+  margin-bottom: 0 !important;
+  padding: 130px 20px;
   font-size: 30px;
   line-height: normal;
   letter-spacing: 1px;
   text-align: center;
+}
+.custom-parallax-content * {
+  margin-bottom: 0 !important;
 }
 .custom-parallax-content.custom-content-left {
   text-align: left;
@@ -904,12 +908,18 @@ input[type="submit"]:hover {
 }
 .custom-parallax-content.about-me {
   max-width: 700px;
+  padding: 170px 20px;
 }
 .custom-parallax-content.beliefs {
   max-width: 850px;
+  padding: 170px 20px;
 }
 .custom-parallax-content.coaching {
   max-width: 900px;
+  padding: 150px 20px;
+}
+.custom-parallax-content.contact-parallax {
+  padding: 180px 20px;
 }
 .custom-author {
   font-size: 22px;
