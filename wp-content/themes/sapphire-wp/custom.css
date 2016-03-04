@@ -1012,6 +1012,9 @@ input[type="submit"],
   padding: 6px 25px;
   font-size: 14px;
 }
+.custom-contact-page .wpcf7-form input[type="submit"] {
+  margin-bottom: 50px;
+}
 .custom-skype:before {
   display: inline-block;
   height: 17px;
