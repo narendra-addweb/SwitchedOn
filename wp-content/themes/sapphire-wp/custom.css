@@ -59,6 +59,12 @@ body {
 .ewf-row {
   width: 1140px;
 }
+#header-top > .ewf-row,
+#header > .ewf-row,
+#footer-bottom > .ewf-row {
+  padding: 0 15px;
+}
+
 /* End */
 
 /* Title design */
@@ -901,11 +907,6 @@ input[type="submit"]:hover {
 .custom-parallax-content.custom-content-left {
   text-align: left;
 }
-
-.custom-contact-page .ewf-wrapper a,
-.custom-contact-page .ewf-wrapper a:hover {
-  text-decoration: none;
-}
 .custom-parallax-content.about-me {
   max-width: 700px;
   padding: 170px 20px;
@@ -964,6 +965,13 @@ input[type="submit"]:hover {
   font-size: 14px;
   font-weight: normal;
 }
+.custom-contact-page .ewf-wrapper a,
+.custom-contact-page .ewf-wrapper a:hover {
+  text-decoration: none;
+}
+.custom-contact-page .wpb_content_element {
+  margin-bottom: 10px;
+}
 .custom-contact-map > .vc_col-sm-12 {
   padding: 0;
 }
@@ -1021,7 +1029,7 @@ input[type="submit"],
   margin-bottom: 10px;
 }
 div.wpcf7-response-output {
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
   padding: 10px 15px !important;
   border: 1px solid #398f14;
   background-color: #dff0d8;
