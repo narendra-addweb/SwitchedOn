@@ -977,6 +977,7 @@ input[type="submit"]:hover {
 .wpcf7-form-control {
   min-height: 30px;
   width: 100%;
+  margin: 15px 0 0 0;
 }
 input:focus,
 input[type="text"]:focus,
@@ -1018,6 +1019,21 @@ input[type="submit"],
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
+}
+div.wpcf7-response-output {
+  margin-bottom: 20px !important;
+  padding: 10px 15px !important;
+  border: 1px solid #398f14;
+  background-color: #dff0d8;
+  color: #398f14;
+  font-family: opensans-bold;
+  font-size: 14px;
+}
+
+div.wpcf7-validation-errors {
+  background-color: #f2dede;
+  color: #a94442;
+  border-color: #a94442;
 }
 /* End */
 
@@ -1063,6 +1079,7 @@ input[type="submit"],
 }
 .workme-content .custom-Session {
   float: left;
+  min-width: 250px;
   margin: 7px 20px 0 0;
 }
 /* End */
