@@ -959,6 +959,9 @@ input[type="submit"]:hover {
 .custom-contact-page {
   margin-top: 50px;
 }
+.custom-contact-page h3.headline {
+  max-width: 275px;
+}
 .custom-contact-page strong {
   color: #ac218f;
   font-family:OpenSans-Bold;
@@ -986,6 +989,9 @@ input[type="submit"]:hover {
   min-height: 30px;
   width: 100%;
   margin: 15px 0 0 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
 }
 input:focus,
 input[type="text"]:focus,
