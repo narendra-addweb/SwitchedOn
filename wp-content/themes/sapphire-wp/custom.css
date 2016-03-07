@@ -1037,6 +1037,19 @@ input[type="submit"],
   width: 100%;
   margin-bottom: 10px;
 }
+.custom-contact-page .custom-select span {
+  height: auto;
+  margin-top: 15px;
+  max-height: 30px;
+  border: 1px solid #acacac;
+}
+.custom-contact-page .custom-select select {
+  height: auto;
+  min-height: 100%;
+  margin-top: 0;
+  padding: 5px 4px 6px;
+  border: none;
+}
 div.wpcf7-response-output {
   margin-bottom: 10px !important;
   padding: 10px 15px !important;
