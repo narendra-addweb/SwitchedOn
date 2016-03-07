@@ -7,27 +7,31 @@
 
 /* OpenSans */
  @font-face{
-  font-family:OpenSans-Regular;
+  font-family: OpenSans-Regular;
   src: url('fonts/OpenSans/OpenSans-Regular.woff');
 }
 @font-face{
-  font-family:OpenSans-Bold;
+  font-family: OpenSans-Bold;
   src: url('fonts/OpenSans/OpenSans-Bold.woff');
 }
 @font-face{
-  font-family:OpenSans-Semibold;
+  font-family: OpenSans-Semibold;
   src: url('fonts/OpenSans/OpenSans-Semibold.woff');
 }
 @font-face{
-  font-family:OpenSans-ExtraBold;
+  font-family: OpenSans-ExtraBold;
   src: url('fonts/OpenSans/OpenSans-ExtraBold.woff');
 }
 @font-face{
-  font-family:OpenSans-Light;
+  font-family: OpenSans-Light;
   src: url('fonts/OpenSans/OpenSans-Light.woff');
 }
 @font-face{
-  font-family:OpenSans-SemiboldItalic;
+  font-family: OpenSans-Italic;
+  src: url('fonts/OpenSans/OpenSans-Italic.woff');
+}
+@font-face{
+  font-family: OpenSans-SemiboldItalic;
   src: url('fonts/OpenSans/OpenSans-SemiboldItalic.woff');
 }
 
@@ -736,7 +740,7 @@ input[type="submit"]:hover {
 /**
  * About me
  */
-.custom_timeline {
+/*.custom_timeline {
   margin-top: 30px;
 }
 .custom_timeline_box.vc_row {
@@ -811,13 +815,6 @@ input[type="submit"]:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0bd0', endColorstr='#b70fd2',GradientType=1 );
   color: #fff;
 }
-.custom-about-parent {
-  font-size: 14px;
-  line-height: 26px;
-}
-.custom-about-info.right-img .custom-about-image .vc_align_left {
-  float: right;
-}
 .custom_timeline_box .timeline_right_content .custome_title_title {
   display: inline-block;
   width: 100%;
@@ -832,6 +829,42 @@ input[type="submit"]:hover {
   margin: 0;
   font-size: 14px;
   text-align: left;
+}*/
+.custom-about-parent {
+  font-size: 14px;
+  line-height: 26px;
+}
+.custom_timeline_box .timeline_right_content {
+  padding: 0;
+}
+.custom-about-info.right-img .custom-about-image .vc_align_left {
+  float: right;
+}
+.custom-grid-timeline {
+  margin-top: 30px;
+}
+.custom_timeline_box.vc_row {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.custom_timeline_box .custome_title_title {
+  float: left;
+  display: inline-block;
+  width: 85px;
+  margin-bottom: 10px;
+  font-family:OpenSans-bold;
+  font-size: 14px;
+  text-align: left;
+}
+.custom_timeline_box .timeline_left_info {
+  float: left;
+  display: inline-block;
+  width: -webkit-calc(100% - 100px);
+  width: -moz-calc(100% - 100px);
+  width: calc(100% - 100px);
+  margin: 0;
+  font-size: 12px;
 }
 /* End */
 
@@ -842,10 +875,16 @@ input[type="submit"]:hover {
 }
 .custom-timeline .horizontal-timeline {
   position: relative;
+  display: inline-block;
   list-style: none;
 }
 .custom-timeline .horizontal-timeline li {
+  float: left;
   display: inline-block;
+  width: 150px;
+}
+.custom-timeline .horizontal-timeline li.big-timeline {
+  width: 180px;
 }
 .custom-timeline .horizontal-timeline li .timeline-year {
   display: inline-block;
@@ -855,20 +894,39 @@ input[type="submit"]:hover {
 }
 .custom-timeline .horizontal-timeline li.big-timeline .timeline-year {
   position: relative;
-  bottom: -21px;
+  bottom: -24px;
   z-index: 1;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 45px;
   background-color: #fff;
-  font-size: 40px;
+  font-size: 44px;
 }
 .custom-timeline .horizontal-timeline li .year-conector {
-
+  position: relative;
+  display: inline-block;
+  height: 25px;
+  width: 100%;
+}
+.custom-timeline .horizontal-timeline li .year-conector .span {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 2px;
+  margin: 0 0 0 53px;
+  background-image: url('images/line-1.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  text-indent: -9999px;
+  content: "";
+}
+.custom-timeline .horizontal-timeline li.big-timeline .year-conector {
+  display: none;
 }
 .custom-timeline .horizontal-timeline:after {
   position: absolute;
-  left: 0;
-  bottom: -20px;
+  left: 3px;
+  bottom: -7px;
   display: inline-block;
   height: 15px;
   width: 100%;
@@ -916,8 +974,9 @@ input[type="submit"]:hover {
   padding: 170px 20px;
 }
 .custom-parallax-content.coaching {
-  max-width: 900px;
-  padding: 150px 20px;
+  max-width: 730px;
+  padding: 150px 15px;
+  font-size: 28px;
 }
 .custom-parallax-content.contact-parallax {
   padding: 180px 20px;
@@ -1038,17 +1097,35 @@ input[type="submit"],
   margin-bottom: 10px;
 }
 .custom-contact-page .custom-select span {
+  position: relative;
   height: auto;
   margin-top: 15px;
   max-height: 30px;
   border: 1px solid #acacac;
 }
+.custom-contact-page .custom-select span:before {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  bottom: 0;
+  left: auto;
+  width: 10px;
+  height: 7px;
+  border: 0;
+  background: url('images/gray-dropdown-arrow.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+}
 .custom-contact-page .custom-select select {
-  height: auto;
+  height: 28px;
   min-height: 100%;
   margin-top: 0;
   padding: 5px 4px 6px;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 div.wpcf7-response-output {
   margin-bottom: 10px !important;
@@ -1108,9 +1185,7 @@ div.wpcf7-validation-errors {
   opacity: 0.8;
 }
 .workme-content .custom-Session {
-  float: left;
-  min-width: 250px;
-  margin: 7px 20px 0 0;
+  margin: 0 0 10px 0;
 }
 /* End */
 
@@ -1213,25 +1288,24 @@ div.wpcf7-validation-errors {
      -moz-border-radius: 1000px;
           border-radius: 1000px;
 }
-.testimonials-widget-testimonial blockquote p:before,
-.testimonials-widget-testimonial blockquote p:after {
+.testimonials-widget-testimonial blockquote p:first-child:before,
+.testimonials-widget-testimonial blockquote p:last-child:after {
   display: inline-block;
   padding-right: 10px;
   font-size: 20px;
   content: "“";
 }
-.testimonials-widget-testimonial blockquote p:after {
+.testimonials-widget-testimonial blockquote p:last-child:after {
   padding-left: 10px;
 }
 .testimonials-widget-testimonial blockquote {
   display: inline-block;
   width: 100%;
+  border-color: #AC218F;
   margin: 30px 0 0;
-  padding-left: 0;
-  border-left: 0;
   font-family: OpenSans-Semibold;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
 }
 .testimonials-widget-testimonial.has-post-thumbnail blockquote {
   padding-left: 20px;
@@ -1241,7 +1315,8 @@ div.wpcf7-validation-errors {
 }
 .testimonials-widget-testimonial .credit {
   color: #ac218f;
-  font-size: 18px;
+  font-family: OpenSans-Italic;
+  font-size: 16px;
 }
 /* End */
 
