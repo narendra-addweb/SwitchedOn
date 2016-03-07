@@ -1044,13 +1044,21 @@ input[type="submit"]:hover {
 .wpcf7-form .ewf-span12 {
   margin-left: 0;
 }
+.wpcf7-form .ewf-span6,
+.wpcf7-form .ewf-span12 {
+  margin-bottom: 20px;
+}
 .wpcf7-form-control {
   min-height: 30px;
   width: 100%;
-  margin: 15px 0 0 0;
+  margin: 0;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+}
+.wpcf7-form label {
+  color: #000;
+  font-family: OpenSans-Semibold;
 }
 input:focus,
 input[type="text"]:focus,
@@ -1096,14 +1104,13 @@ input[type="submit"],
   width: 100%;
   margin-bottom: 10px;
 }
-.custom-contact-page .custom-select span {
+.custom-contact-page .custom-select span.wpcf7-form-control-wrap {
   position: relative;
   height: auto;
-  margin-top: 15px;
   max-height: 30px;
   border: 1px solid #acacac;
 }
-.custom-contact-page .custom-select span:before {
+.custom-contact-page .custom-select span.wpcf7-form-control-wrap:before {
   position: absolute;
   top: 10px;
   right: 15px;
