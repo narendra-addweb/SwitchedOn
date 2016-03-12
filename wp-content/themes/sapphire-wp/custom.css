@@ -1650,7 +1650,11 @@ div.wpcf7-validation-errors {
   .custom-about-info .custom-about-text {
     width: 100%;
   }
-  .custom-about-image .wpb_single_image .vc_single_image-wrapper { width: 100%; }
+  .custom-about-image .wpb_single_image ,
+  .custom-about-image .wpb_single_image .vc_single_image-wrapper {
+    width: 100%;
+  }
+
   .custom-about-info .custom-about-image img {
     max-width: 100%;
     width: 100% !important;
