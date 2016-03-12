@@ -1653,6 +1653,7 @@ div.wpcf7-validation-errors {
   .custom-about-image .wpb_single_image .vc_single_image-wrapper { width: 100%; }
   .custom-about-info .custom-about-image img {
     max-width: 100%;
+    width: 100% !important;
   }
 
   /* Home page */
@@ -1790,6 +1791,10 @@ div.wpcf7-validation-errors {
   #mobile-menu-trigger {
     margin-right: 0;
     right: 0;
+  }
+  .custom-slider-home2 a.tp-button {
+    position: relative;
+    top: 15px;
   }
 
   .custom-parallax-content {
