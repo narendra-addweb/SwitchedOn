@@ -1458,7 +1458,7 @@ div.wpcf7-validation-errors {
 
   /* Parallax */
   .custom-parallax {
-    min-height: auto;
+    min-height: 100%;
     background-size: 120% auto;
   }
   .custom-parallax-content {
@@ -1689,7 +1689,7 @@ div.wpcf7-validation-errors {
 
   /* Footer */
   #footer #footer-middle {
-    /*text-align: center;*/
+    text-align: center;
   }
   #footer #footer-middle #footer-middle-widget-area-1,
   #footer #footer-middle #footer-middle-widget-area-4 {
