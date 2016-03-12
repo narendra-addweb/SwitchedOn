@@ -1425,11 +1425,6 @@ div.wpcf7-validation-errors {
 
 /* Tablet and i-pad landscape & portrait view */
 @media screen and (max-width: 1024px) {
-  
-} /* 1024px */
-
-/* Tablet and i-pad portrait view only */
-@media screen and (max-width: 992px) {
   #header-top #header-top-widget-area-1 {
     width: 70%;
     padding: 10px 0;
@@ -1438,6 +1433,20 @@ div.wpcf7-validation-errors {
   #header-top #header-top-widget-area-2 {
     width: 30%;
     margin: 0;
+  }
+  .custom-contact-leftside .custom-contact a {
+    color: #474d5d;
+  }
+  
+} /* 1024px */
+
+/* Tablet and i-pad portrait view only */
+@media screen and (max-width: 992px) {
+  #content {
+    padding-bottom: 10px;
+  }
+  #content .ewf-full-width-section {
+    margin-bottom: 10px;
   }
   .sf-menu li a {
     padding: 12px 25px;
@@ -1451,11 +1460,15 @@ div.wpcf7-validation-errors {
     margin: 0 10px;
   }
   /* contact page*/
-  .custom-contact-page > .vc_col-sm-3 {
-    width: 35%;
+  .custom-contact-page > .vc_col-sm-4 {
+    width: 40%;
   }
-  .custom-contact-page > .vc_col-sm-9 {
-    width: 65%;
+  .custom-contact-page > .vc_col-sm-8 {
+    width: 60%;
+  }
+  .custom-contact-page > .vc_col-sm-8 form .ewf-span6 {
+    width: 100%;
+    margin: 0 0 20px 0;
   }
 
   /* Footer */
@@ -1466,9 +1479,13 @@ div.wpcf7-validation-errors {
   #footer #footer-middle #footer-middle-widget-area-4 {
     width: 32%;
   }
+  /*
   #footer #footer-middle #footer-middle-widget-area-2,
   #footer #footer-middle #footer-middle-widget-area-3 {
     width: 13%;
+  }*/
+  #footer .hidden-tablet.hidden-phone {
+    display: inline-block !important;
   }
 
   /* Home page */
@@ -1478,6 +1495,23 @@ div.wpcf7-validation-errors {
   .custom-block-1 h2 {
     font-size: 20px;
   }
+  .custom-slider-home2 .tp-caption.large_bold_white {
+    font-size: 80px !important;
+  }
+  .custom-slider-home2 a.tp-button {
+    font-size: 22px !important;
+  }
+  .custom-slider-home2 .custom-slogan-home.ewf-row {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .custom-slider-home2 .custom-slogan-home.ewf-row p {
+    margin-bottom: 0;
+  }
+  .custom-slider-home2 .custom-slogan-home.ewf-row p strong { font-size: 14px; }
+  .custom-slider-aboutme .wpb_text_column h2:before,
+  .custom-slider-aboutme .wpb_text_column h2:after { width: 50px; }
+  .custom-slider-aboutme .vc_btn3-container a.vc_general { padding: 9px; }
   /* End */
 
   /* About Me */
@@ -1499,20 +1533,52 @@ div.wpcf7-validation-errors {
   #mobile-menu-trigger {
     margin: 10px 15px;
   }
-  } /* 980px */
+
+    #mobile-menu li a::before {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+    background-color: #fff;
+    content: "";
+  }
+  #mobile-menu ul a::before {
+    height: 5px;
+    width: 5px;
+  }
+} /* 980px */
 
 /* Mobile landscape & portrait view */
 @media screen and (max-width: 767px) {
+  /* Top header */
+  #header-top {
+    display: block !important;
+  }
+  #header-top #header-top-widget-area-1 {
+    width: -moz-calc(100% + 30px);
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  #header-top #header-top-widget-area-2 {
+    width: 100%;
+  }
+  /* End */
   .ewf-row,
   .custom-slider-home1.ewf-row {
     width: auto;
   }
   #mobile-menu-trigger {
-    margin: 35px 0 0;
+    top: 10px;
   }
   /* contact page*/
-  .custom-contact-page > .vc_col-sm-3,
-  .custom-contact-page > .vc_col-sm-9 {
+  .custom-contact-page > .vc_col-sm-4,
+  .custom-contact-page > .vc_col-sm-8 {
     width: 100%;
   }
 
@@ -1527,7 +1593,10 @@ div.wpcf7-validation-errors {
   .custom-about-info .custom-about-text {
     width: 100%;
   }
-
+  .custom-about-image .wpb_single_image .vc_single_image-wrapper { width: 100%; }
+  .custom-about-info .custom-about-image img {
+    max-width: 100%;
+  }
 
   /* Home page */
   .custom-block-1 .custom-subblock {
@@ -1545,6 +1614,9 @@ div.wpcf7-validation-errors {
   }
   .custom-block-1 {
     margin: 20px auto;
+  }
+  .custom-slider-home2 .tp-caption.large_bold_white {
+    font-size: 40px !important;
   }
 
   /* About Me */
@@ -1574,8 +1646,12 @@ div.wpcf7-validation-errors {
   #footer #footer-middle #footer-middle-widget-area-1 .widget {
     padding: 0;
   }
+  #footer #footer-bottom,
   #footer-bottom-widget-area-2 {
     text-align: center;
+  }
+  #footer-bottom-widget-area-2 {
+    margin-bottom: 20px;
   }
   /* End */
 } /* 767px */
@@ -1605,3 +1681,9 @@ div.wpcf7-validation-errors {
   }
   /* End */
 } /* 480px */
+
+@media screen and (max-width: 360px) {
+  #header-top-widget-area-1 .custom-email {
+    display: inline-block;
+  }
+}
