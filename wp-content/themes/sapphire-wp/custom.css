@@ -888,18 +888,22 @@ input[type="submit"]:hover {
   width: 100%;
   margin: 0 auto;
   background-image: url('images/time-line.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .custom-timeline .horizontal-timeline {
   position: relative;
+  float: left;
   display: inline-block;
+  height: 0;
   list-style: none;
   opacity: 0;
 }
 .custom-timeline .horizontal-timeline li {
   float: left;
-  display: inline-block;
+  display: none;
+  height: 0;
   width: 153px;
 }
 .custom-timeline .horizontal-timeline li.big-timeline {
@@ -1764,6 +1768,13 @@ div.wpcf7-validation-errors {
     font-size: 16px;
   }
   /* End */
+  .custom-timeline .wpb_text_column {
+    margin-bottom: 10px;
+  }
+  .custom-timeline .wpb_text_column .ewf-wrapper {
+    min-height: 65px;
+  }
+
 } /* 767px */
 /* Mobile portrait view only */
 @media screen and (max-width: 480px) {
