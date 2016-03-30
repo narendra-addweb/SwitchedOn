@@ -1611,12 +1611,9 @@ div.wpcf7-validation-errors {
 
     #mobile-menu li a::before {
     display: inline-block;
-    height: 8px;
-    width: 8px;
+    height: 7px;
+    width: 7px;
     margin-right: 10px;
-    -moz-border-radius: 1000px;
-    -webkit-border-radius: 1000px;
-    border-radius: 1000px;
     background-color: #fff;
     content: "";
   }
