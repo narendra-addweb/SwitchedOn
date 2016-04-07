@@ -251,8 +251,8 @@ h3.headline span {
 .sf-menu > li.current-menu-parent,
 .sf-menu > li.current_page_parent,
 .sf-menu > li.current-menu-item > a {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
   border: none;
   background: #ca0bd0;
   background: -moz-linear-gradient(left,  #ca0bd0 0%, #b70fd2 99%);
