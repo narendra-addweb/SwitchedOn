@@ -12,6 +12,13 @@
 	?>
 
 	<?php wp_head(); ?>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('.faq-page-wrap.faq-curious-booknow').parent('.ewf-full-width-section').addClass('faq-last-booknow');
+			jQuery('.faq-page-wrap.faq-curious-booknow').closest('body').addClass('invitation-faq-page');
+		});
+	</script>
 	
 </head>
 <body <?php body_class(); ?>> 

@@ -1,5 +1,13 @@
-.ewd-ufaq-hidden {
-  display:none;
+.ufaq-faq-body.ewd-ufaq-hidden {
+  /*display:none;*/
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  visibility: visible;
+  -webkit-transform: scaleY(0);
+     -moz-transform: scaleY(0);
+          transform: scaleY(0);
 }
 
 .ufaq-faq-category-title-toggle {
@@ -54,8 +62,15 @@
   clear: both;
 }
 .ufaq-faq-body {
+  height: auto;
   padding:10px 25px;
   padding-left: 55px;
+  -webkit-transition: all .5s ease 0s;
+     -moz-transition: all .5s ease 0s;
+          transition: all .5s ease 0s;
+  -webkit-transform-origin: top;
+     -moz-transform-origin: top;
+          transform-origin: top;
 }
 .ufaq-faq-search{
   margin:5px 0 !important;
