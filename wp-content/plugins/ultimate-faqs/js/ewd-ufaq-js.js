@@ -53,7 +53,7 @@ function ufaqSetClickHandlers() {
 	jQuery('.ufaq-back-to-top-link').off('click').on('click', function(event) {
 		event.preventDefault();
 
-		jQuery('html, body').animate({scrollTop: jQuery("#ufaq-faq-list").offset().top -80}, 100);
+		//jQuery('html, body').animate({scrollTop: jQuery("#ufaq-faq-list").offset().top -80}, 100);
 	});
 
 	jQuery('.ufaq-faq-header-link').off('click').on('click', function(event) {
@@ -64,7 +64,7 @@ function ufaqSetClickHandlers() {
 			var selectedIDString = 'ufaq-body-'+faqID;
 			EWD_UFAQ_Reveal_FAQ(faqID, selectedIDString);
 		}
-		jQuery('html, body').animate({scrollTop: jQuery("#ufaq-post-"+faqID).offset().top -20}, 100);
+		//jQuery('html, body').animate({scrollTop: jQuery("#ufaq-post-"+faqID).offset().top -20}, 100);
 	});
 }
 
@@ -125,7 +125,7 @@ jQuery(document).ready(function() {
 	if (faq_scroll) {
     	jQuery('.ufaq-faq-title').click(function(){
     		var faqID = jQuery(this).attr('id'); 
-    		jQuery('html, body').animate({scrollTop: jQuery(this).offset().top -80}, 100);
+    		//jQuery('html, body').animate({scrollTop: jQuery(this).offset().top -80}, 100);
     	});
 	}
 
@@ -148,7 +148,7 @@ jQuery(document).ready(function() {
 		var selectedIDString = jQuery('.ufaq-body-'+Display_FAQ_ID).attr('id');
 		Display_FAQ_ID = selectedIDString.substring(10);
 		EWD_UFAQ_Reveal_FAQ(Display_FAQ_ID, selectedIDString);
-		jQuery('html, body').delay(800).animate({scrollTop: jQuery("#"+selectedIDString).offset().top - 180}, 300);
+		//jQuery('html, body').delay(800).animate({scrollTop: jQuery("#"+selectedIDString).offset().top - 180}, 300);
 	}
 });
 
@@ -219,3 +219,42 @@ function UFAQSetRatingHandlers() {
     }
   });
 });*/
+
+jQuery(document).ready(function() {
+  jQuery('.ufaq-faq-body').each(function() {
+    jQuery(this).css('height', 'auto');
+    var faq_content_h = jQuery(this).outerHeight();
+    jQuery(this).css('height', '0');
+    jQuery(this).attr('data-height', faq_content_h);
+  });
+  jQuery('.ufaq-faq-toggle').click(function() {
+    var faq_body_h = jQuery(this).siblings('.ufaq-faq-body').attr('data-height');
+    
+    if (jQuery(this).siblings('.ufaq-faq-body').hasClass('ewd-ufaq-hidden')) {
+      jQuery(this).siblings('.ufaq-faq-body').css('height', '0');
+    }
+    else {
+      jQuery('.ufaq-faq-body').css('height', '0');
+      jQuery(this).siblings('.ufaq-faq-body').css('height', faq_body_h);
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
