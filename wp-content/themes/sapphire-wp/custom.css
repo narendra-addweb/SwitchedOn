@@ -2001,7 +2001,7 @@ div.wpcf7-validation-errors {
 }
 @media (max-width: 606px) {
   .faq-page-wrap .ufaq-faq-title-text {
-    margin-left: 40px;
+    margin-left: 25px;
     position: absolute;
   }
 }
@@ -2162,38 +2162,45 @@ div.wpcf7-validation-errors {
 
 /* custom-parallax faq-page-wrap */
 .faq-page-wrap.custom-parallax {
-  min-height: 260px;
+  min-height: 412px;
   max-height: 260px;
   height: 260px;
   background-size: cover;
 }
 .invitation-parallax-content {
-  float: none;
   clear: both;
   display: block;
+  float: left;
   max-width: 890px;
   width: 100%;
   margin: 0 auto;
-  padding: 100px;
+  padding: 140px 80px;
+  letter-spacing: 1px;
 }
-.invitation-parallax-content h4 {
+.invitation-parallax-content h4,
+.invitation-parallax-content h5  {
   margin: 0;
   color: #FFF;
-  font-size: 26px;
-  font-family: OpenSans-Bold;
-}
-.invitation-parallax-content h5 {
-  margin: 0;
-  color: #FFF;
-  font-size: 14px;
-  font-family: OpenSans-Regular;
+  font-size: 30px;
+  font-family: Lato-bold;
+  text-transform: uppercase;
+  line-height: normal;
 }
 @media (max-width: 1200px) {
   .invitation-parallax-content {
     max-width: 780px;
   }
 }
-
+@media (max-width: 640px) {
+  .invitation-parallax-content {
+    padding: 140px 10px;
+  }
+}
+@media (max-width: 380px) {
+  .invitation-parallax-content {
+    padding: 100px 10px;
+  }
+}
 /* End */
 
 
