@@ -41,11 +41,11 @@ get_header(); ?>
 							</div>
 							<div class="blog-list-img">
 								<img src="<?php echo $custom_field_data['wpcf-set-featured-image'][0]; ?>" width="300px">
-								<?php if(strlen($custom_field_data['wpcf-excerpt'][0]) != 239) {
-										$custom_post_excerpt = substr($custom_field_data['wpcf-excerpt'][0], 0, 239)."...<a href='".get_post_permalink($blogs_value->ID)."'><span class='keep-reading'>Keep Reading</span></a>";
+								<?php if(strlen($blogs_value->post_content) != 239) {
+										$custom_post_excerpt = substr($blogs_value->post_content, 0, 239)."...<a href='".get_post_permalink($blogs_value->ID)."'><span class='keep-reading'>Keep Reading</span></a>";
 									}
 									else {
-											$custom_post_excerpt = $custom_field_data['wpcf-excerpt'][0];
+											$custom_post_excerpt = $blogs_value->post_content;
 										}?>
 							</div>
 							<div class="blog-list-desc">
@@ -118,9 +118,10 @@ get_header(); ?>
 					foreach ($custom_blog_post_data as $R_blogs_key => $R_blogs_value) {
 						$R_custom_field_data = get_post_custom($R_blogs_value->ID);
 						$serialize_post_data =  maybe_unserialize( $R_custom_field_data['crp_relations_to'][0] );
+						$random_blog_post = array_rand($serialize_post_data, 2);
 						if(!empty($serialize_post_data)) { 
 							foreach($serialize_post_data as $related_post_id => $r_post_data) { 
-								if(!in_array($related_post_id, $chk_duplicate_key)) { 
+								if(!in_array($related_post_id, $random_blog_post)) { 
 									$relate_custom_field_data = get_post_custom($related_post_id);?>
 									<div class="custom-blog-related-post blog-post-list">
 										<div class="blog-list-img">
@@ -133,21 +134,21 @@ get_header(); ?>
 											<div class="blog-list-title">
 												<h3><a href="<?php echo get_post_permalink($related_post_id);?>"><?php echo strtoupper($r_post_data['title']); ?></a></h3>
 											</div>
-											<?php if(strlen($relate_custom_field_data['wpcf-excerpt'][0]) != 150) {
-													$related_custom_post_excerpt = substr($relate_custom_field_data['wpcf-excerpt'][0], 0, 150)."...<a href='".	get_post_permalink($related_post_id)."'><span class='keep-reading'>Keep Reading</a>";
+											<?php if(strlen($R_blogs_value->post_content) != 150) {
+													$related_custom_post_excerpt = substr($R_blogs_value->post_content, 0, 150)."...<a href='".	get_post_permalink($related_post_id)."'><span class='keep-reading'>Keep Reading</a>";
 												}
 												else {
-												$related_custom_post_excerpt = $relate_custom_field_data['wpcf-excerpt'][0];
+												$related_custom_post_excerpt = $R_blogs_value->post_content;
 											}?>
 											<div class="blog-list-desc">
 												<p><?php echo  $related_custom_post_excerpt; ?></p>
 											</div>
 										</div>
 									</div><?php
-					    		} $chk_duplicate_key[] =  $related_post_id; 		
-								} 
-							}
-						} ?>
+					    		} 		
+							} 
+						}
+					} ?>
 				</div>
 			</div>
 	</div>
