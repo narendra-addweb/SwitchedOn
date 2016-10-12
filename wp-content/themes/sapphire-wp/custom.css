@@ -2301,6 +2301,8 @@ div.wpcf7-validation-errors {
 .custom-blog-related-post.blog-post-list .blog-list-img img { border-bottom: none; }
 .blog-post-list .related-post-detail {
   display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
   padding: 22px 25px 30px;
   background-color: #F8F8F8;
   -webkit-border-radius: 1px;
@@ -2325,7 +2327,8 @@ div.wpcf7-validation-errors {
 .blog-pagination .navigation li a,
 .blog-pagination .navigation li a:hover,
 .blog-pagination .navigation li.active a,
-.blog-pagination .navigation li.disabled {
+.blog-pagination .navigation li.disabled,
+.blog-pagination .navigation li span {
   color: #A3A3A3;
   font-size: 15px;
   border-right: 1px solid #A3A3A3;
@@ -2346,7 +2349,8 @@ div.wpcf7-validation-errors {
 .blog-pagination .navigation li a,
 .blog-pagination .navigation li a:hover,
 .blog-pagination .navigation li.active a,
-.blog-pagination .navigation li.disabled {
+.blog-pagination .navigation li.disabled,
+.blog-pagination .navigation li span {
   background-color: transparent;
   cursor: pointer;
   padding: 0 12px;
@@ -2368,6 +2372,29 @@ div.wpcf7-validation-errors {
 .custom-parallax-content.custom-blog-parallex {
   padding: 198px 84px;
 }
+/* Inner page side bar */
+.widget_search #searchsubmit {
+  min-height: 27px;
+  height: 27px;
+}
+.widget_search,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_archive,
+.widget_categories,
+.widget_meta {
+  padding-left: 20px;
+}
+.widget_recent_entries .widget-title span,
+.widget_recent_comments .widget-title span,
+.widget_archive .widget-title span,
+.widget_categories .widget-title span,
+.widget_meta .widget-title span {
+  color: #000;
+  font-size: 24px;
+  font-family: OpenSans-Semibold;
+}
+/* End */
 @media (max-width: 1024px) {
   .custom-parallax-content.custom-blog-parallex {
     padding: 130px 84px;
