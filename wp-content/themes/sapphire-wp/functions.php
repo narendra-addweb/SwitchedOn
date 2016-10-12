@@ -25,4 +25,79 @@ register_sidebar(array( // register left sidebar, this block may be repeat to ad
 	'before_title' => '<span class="blogtitile">', // markup before any title in widget
 	'after_title' => "</span>\n", // markup after any title in widget
 ));
+
+
+/**
+ * Generate custom pagination for blogs page for custom post
+ * 
+ * @uses paginate_links()
+ * @uses get_option()
+ */
+function awsCustomPagination($arg_query, $paged){
+	
+	$total = $arg_query->max_num_pages;
+	// only bother with the rest if we have more than 1 page!
+	if ($total > 1)  {
+	     // get the current page
+	     if (!$current_page = $paged)
+	          $current_page = 1;
+	     // structure of "format" depends on whether we're using pretty permalinks
+	     if(get_option('permalink_structure')) {
+		     $format = '&paged=%#%';
+	     } else {
+		     $format = 'page/%#%/';
+	     }
+
+	     //Render pagination...
+	     echo paginate_links(array(
+	          //'base'     => get_pagenum_link(1) . '%_%',
+	          //'format'   => $format,
+	          'current'  => $current_page,
+	          'total'    => $total,
+	          'mid_size' => 4,
+	          'type'     => 'list',
+	          'prev_text' => '« Previous Page',
+	          'next_text' => 'Next Page »'
+	     ));
+	}
+}
+
+
+/**
+ * Get post excerpt out of post loop and trim it
+ * 
+ * @uses get_post()
+ * @uses setup_postdata()
+ * @uses get_the_excerpt()
+ * @uses strip_shortcodes()
+ * @uses strip_tags()
+ * @uses get_post_permalink()
+ * @uses wp_reset_postdata()
+ */
+function get_excerpt_out_loop($post_id, $excerpt_word_length = 9){
+    global $post;
+    $temp = $post;
+    $post = get_post($post_id);
+    
+    setup_postdata($post);
+    $the_excerpt = get_the_excerpt(); //Gets post_content to be used as a basis for the excerpt
+    $excerpt_length = $excerpt_word_length; //Sets excerpt length by word count
+    $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
+    $words = explode(' ', $the_excerpt, $excerpt_length + 1);
+
+    if(count($words) > $excerpt_length) :
+        array_pop($words);
+        $postLink = get_post_permalink($blogs_value->ID);//Main post url...
+        $postTitle = $post->post_title;//Main post url...
+      	$keepingLink = "...<a href='". $postLink ."' title='Keep Reading For ". $postTitle . "'><span class='keep-reading'>Keep Reading</span></a>";
+        array_push($words, $keepingLink);
+        $the_excerpt = implode(' ', $words);
+    endif;
+
+    wp_reset_postdata();
+    $post = $temp;
+    return $the_excerpt;
+
+    
+}
 ?>

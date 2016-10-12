@@ -33,9 +33,9 @@
 		
 	
 	# Get post featured image
-	#  
-	$ewf_custom_field = get_post_custom($post->ID);
-	$ewf_image_url = $ewf_custom_field['wpcf-set-featured-image'][0];
+	# 
+	$post_thumb = get_the_post_thumbnail( $post->ID, 'full'); 
+	
 	
 	
 	# Conditional preloading
@@ -53,8 +53,8 @@
 			echo  __('in', EWF_SETUP_THEME_DOMAIN).' '.$ewf_post_categories;
 		}
 		echo  ' | <a href="'.get_permalink().'#comments">'.get_comments_number().' '.__('comments', EWF_SETUP_THEME_DOMAIN).'</a></h4></div>';
-				if ($ewf_image_url){
-					echo  '<img src="'.$ewf_image_url.'" alt="" />';
+				if ($post_thumb){
+					echo  '<a href="' . get_permalink() . '" title="'.get_the_title($post->ID).'">'.$post_thumb.'</a>';
 				}
 
 			
