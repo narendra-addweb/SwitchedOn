@@ -46,7 +46,7 @@
 	
 	echo  '<div class="blog-post '.$ewf_post_class.' blog-post-list">';
 	
-		echo  '<h4><a href="' . get_permalink() . '">'.get_the_title($post->ID).'</a></h4>' ;
+		echo  '<h4>'.get_the_title($post->ID).'</h4>' ;
 	
 		echo  '<div class="blog-list-author"><h4>'.__('Posted by', EWF_SETUP_THEME_DOMAIN).' <strong>'.get_the_author().'</strong> ';
 		if ($ewf_post_categories){
@@ -54,7 +54,7 @@
 		}
 		echo  ' | <a href="'.get_permalink().'#comments">'.get_comments_number().' '.__('comments', EWF_SETUP_THEME_DOMAIN).'</a></h4></div>';
 				if ($post_thumb){
-					echo  '<a href="' . get_permalink() . '" title="'.get_the_title($post->ID).'">'.$post_thumb.'</a>';
+					echo  $post_thumb;
 				}
 
 			

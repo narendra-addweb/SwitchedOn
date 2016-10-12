@@ -54,6 +54,7 @@ get_header(); ?>
 							<div class="blog-list-img"><?php
 								//Get related post thumb in medium size...
 								$related_thumb = get_the_post_thumbnail( $blogs_value->ID, 'medium' );
+								print '<a href="'. $mainPostLink .'" title="'. $mainPostTitle . '">' . $related_thumb . '</a>';
 								//Get the excerpt...
 								print get_excerpt_out_loop($blogs_value->ID, 20);
 							?></div>
