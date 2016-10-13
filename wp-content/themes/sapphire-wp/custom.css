@@ -2434,6 +2434,14 @@ div.wpcf7-validation-errors {
     /*padding-left: 30px;
     padding-right: 30px;*/
   }
+  .widget_search,
+  .widget_recent_entries,
+  .widget_recent_comments,
+  .widget_archive,
+  .widget_categories,
+  .widget_meta {
+    padding-left: 0;
+  }
 }
 @media (max-width: 480px) {
   .blog-post-list {
