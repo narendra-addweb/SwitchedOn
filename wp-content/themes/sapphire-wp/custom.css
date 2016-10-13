@@ -2216,10 +2216,12 @@ div.wpcf7-validation-errors {
 .page-template-custom-blog-posts .vc_col-sm-4 {
   float: left;
   width: 37%;
+  padding: 0 15px;
 }
 .page-template-custom-blog-posts .vc_col-sm-8 {
   float: left;
   width: 63%;
+  padding: 0 15px;
 }
 .blog-post-lists { padding-right: 37px; }
 
@@ -2321,17 +2323,17 @@ div.wpcf7-validation-errors {
   display: inline-block;
   margin-bottom: 0;
   padding: 10px 0;
-  border-top: 1px solid #A3A3A3;
-  border-bottom: 1px solid #A3A3A3;
+  border-top: 1px solid #BFBDBD;
+  border-bottom: 1px solid #BFBDBD;
 }
 .blog-pagination .navigation li a,
 .blog-pagination .navigation li a:hover,
 .blog-pagination .navigation li.active a,
 .blog-pagination .navigation li.disabled,
 .blog-pagination .navigation li span {
-  color: #A3A3A3;
+  color: #828282;
   font-size: 15px;
-  border-right: 1px solid #A3A3A3;
+  border-right: 1px solid #828282;
   text-decoration:none;
 }
 .blog-pagination .navigation li.prev a,
@@ -2345,7 +2347,9 @@ div.wpcf7-validation-errors {
 .blog-pagination .navigation li {
   display: inline-block;
 }
-
+.blog-pagination .navigation li:last-child .current {
+  border-right: none;
+}
 .blog-pagination .navigation li a,
 .blog-pagination .navigation li a:hover,
 .blog-pagination .navigation li.active a,
@@ -2409,6 +2413,7 @@ div.wpcf7-validation-errors {
   .page-template-custom-blog-posts .vc_col-sm-4,
   .page-template-custom-blog-posts .vc_col-sm-8 {
     width: 100%;
+    padding: 0;
   }
   .custom-blog-related-post {
     float: none;
@@ -2444,15 +2449,3 @@ div.wpcf7-validation-errors {
   }
 }
 /* End */
-
-
-
-
-
-
-
-
-
-
-
-
