@@ -2378,7 +2378,8 @@ div.wpcf7-validation-errors {
 }
 /* Inner page side bar */
 .widget_search #searchsubmit {
-  min-height: 27px;
+  /*min-height: 27px;*/
+  top: 0;
   height: 27px;
 }
 .widget_search,
