@@ -26,6 +26,29 @@ register_sidebar(array( // register left sidebar, this block may be repeat to ad
 	'after_title' => "</span>\n", // markup after any title in widget
 ));
 
+//widget area for custom blog post side 1.
+
+register_sidebar(array( // register left sidebar, this block may be repeat to add other sidebars
+	'name' => 'Custom Blogs Sidebar 1', // displaying name in admin panel
+	'id' => "custom-blog-side-1", // identificator for calling sidebar in sidebar.php or another templates
+	'description' => 'This sidebar 1 is used in custom blog template', // displaying description in admin panel
+	'before_widget' => '<div id="custom-blog-related-post-side-1" class="custom-related-post-side-1">', // markup before any widget
+	'after_widget' => "</div>\n", // markup after any widget
+	'before_title' => '<span class="blogtitile-side-1">', // markup before any title in widget
+	'after_title' => "</span>\n", // markup after any title in widget
+));
+
+//widget area for custom blog post side 2.
+
+register_sidebar(array( // register left sidebar, this block may be repeat to add other sidebars
+	'name' => 'Custom Blogs Sidebar 2', // displaying name in admin panel
+	'id' => "custom-blog-side-2", // identificator for calling sidebar in sidebar.php or another templates
+	'description' => 'This sidebar 2 is used in custom blog template', // displaying description in admin panel
+	'before_widget' => '<div id="custom-blog-related-post-side-2" class="custom-related-post-side-2">', // markup before any widget
+	'after_widget' => "</div>\n", // markup after any widget
+	'before_title' => '<span class="blogtitile-side-2">', // markup before any title in widget
+	'after_title' => "</span>\n", // markup after any title in widget
+));
 
 /**
  * Generate custom pagination for blogs page for custom post

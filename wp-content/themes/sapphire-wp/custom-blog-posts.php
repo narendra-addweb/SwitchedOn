@@ -80,6 +80,10 @@ get_header(); ?>
 		<!-- Remove 'Related Blog Post' code as per ticket #78 -->
 		<div class="custom-blog-left-side vc_col-sm-3"><?php 
 			dynamic_sidebar('custom-blogs');
+			?><div class="parent-custom-blog-side-1"><?php
+			dynamic_sidebar('custom-blog-side-1');
+			?></div><?php
+			dynamic_sidebar('custom-blog-side-2');
 		?></div>
 	</div>
 	
