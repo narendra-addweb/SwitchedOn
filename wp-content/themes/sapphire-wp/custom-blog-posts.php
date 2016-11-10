@@ -55,7 +55,7 @@ get_header(); ?>
 							<div class="blog-list-img"><?php
 								//Get related post thumb in medium size...
 								add_filter( 'max_srcset_image_width', create_function( '', 'return 1;' ) );
-								$related_thumb = get_the_post_thumbnail( $blogs_value->ID, 'medium' );
+								$related_thumb = get_the_post_thumbnail( $blogs_value->ID, 'large' );
 								print '<a href="'. $mainPostLink .'" title="'. $mainPostTitle . '">' . $related_thumb . '</a>';
 								remove_filter( 'max_srcset_image_width', create_function( '', 'return 1;' ) );
 								
