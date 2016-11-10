@@ -32,7 +32,7 @@ get_header(); ?>
 		?>
 
 		<!-- **************************Custom Blog Post Data********************************** -->
-		<div class="blog-posts wpb_column vc_column_container vc_col-sm-8">
+		<div class="blog-posts wpb_column vc_column_container vc_col-sm-8 custom-blog-right-side">
 			<div class="blog-post-lists">
 				<h3 class="headline"><span>BLOGS</span></h3>
 				<?php 
@@ -78,6 +78,14 @@ get_header(); ?>
 			?></div>
 		</div>
 		<!-- Remove 'Related Blog Post' code as per ticket #78 -->
+		<div class="custom-blog-right-side"><?php 
+			while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+      	<div class="entry-content-page">
+          <?php the_content(); ?> <!-- Page Content -->
+      	</div><!-- .entry-content-page --><?php
+	    endwhile; //resetting the page loop
+	    wp_reset_query(); 
+		?></div>
 	</div>
 	
 </div>
