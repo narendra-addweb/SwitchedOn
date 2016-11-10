@@ -32,7 +32,7 @@ get_header(); ?>
 		?>
 
 		<!-- **************************Custom Blog Post Data********************************** -->
-		<div class="blog-posts wpb_column vc_column_container vc_col-sm-8 custom-blog-right-side">
+		<div class="blog-posts wpb_column vc_column_container vc_col-sm-9 custom-blog-right-side">
 			<div class="blog-post-lists">
 				<h3 class="headline"><span>BLOGS</span></h3>
 				<?php 
@@ -78,7 +78,7 @@ get_header(); ?>
 			?></div>
 		</div>
 		<!-- Remove 'Related Blog Post' code as per ticket #78 -->
-		<div class="custom-blog-right-side"><?php 
+		<div class="custom-blog-left-side vc_col-sm-3"><?php 
 			dynamic_sidebar('custom-blogs');
 		?></div>
 	</div>
