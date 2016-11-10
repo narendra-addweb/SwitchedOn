@@ -1586,6 +1586,40 @@ div.wpcf7-validation-errors {
 }
 /* End */
 
+/* Blog page sidebar */
+.parent-custom-blog-side-1 {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background-color: #E6E6E6;
+  border: 1px solid #CCC;
+}
+.parent-custom-blog-side-1 .custom-related-post-side-1:first-child {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 15px;
+}
+.parent-custom-blog-side-1 .custom-related-post-side-1 .social-icon {
+  margin-right: 13px;
+  color: #666666;
+}
+.parent-custom-blog-side-1 .custom-related-post-side-1 .social-icon:hover {
+  border-color: transparent;
+  color: #666666 !important;
+  opacity: .8;
+}
+.parent-custom-blog-side-1 .custom-related-post-side-1 .eemail_textbox input {
+  background-color: #fff;
+  width: 100%;
+}
+.parent-custom-blog-side-1 .custom-related-post-side-1 .eemail_button input {
+  width: 100%;
+  background-color: #555555;
+  color: #fff;
+  font-family: OpenSans-Bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 
 /**
  * Responsive design
