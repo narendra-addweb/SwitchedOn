@@ -1607,9 +1607,12 @@ div.wpcf7-validation-errors {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.parent-custom-blog-side-1 .custom-related-post-side-1:first-child {
+.parent-custom-blog-side-1 .custom-related-post-sidse-1:first-child {
   border-bottom: 1px solid #CCC;
   margin-bottom: 15px;
+  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.7);
 }
 .parent-custom-blog-side-1 .custom-related-post-side-1 .social-icon {
   margin-right: 13px;
