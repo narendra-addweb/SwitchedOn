@@ -250,6 +250,8 @@
         Custom style
         Please remove below comment for two line if you want to add custom.css style
     */
+    wp_register_style( 'js_composer', get_stylesheet_directory_uri() . '/js_composer.css' );
+    wp_enqueue_style( 'js_composer' );
     wp_register_style( 'custom-style', get_stylesheet_directory_uri() . '/custom.css' );
     wp_enqueue_style( 'custom-style' ); 		
 	
